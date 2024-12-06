@@ -6,7 +6,8 @@
     "start": "CHAIN=mainnet nodemon",
     "build": "tsc",
     "serve": "CHAIN=mainnet node dist/index.js",
-    "start:pm2": "CHAIN=mainnet pm2 start dist/index.js --name trade-fundex-bot"
+    "start:pm2": "CHAIN=mainnet pm2 start dist/index.js --name trade-fundex-bot",
+    "restart:pm2": "pm2 restart trade-fundex-bot"
   },
   "dependencies": {
     "@multiversx/sdk-core": "^13.15.0",
