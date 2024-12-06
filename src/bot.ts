@@ -158,7 +158,7 @@ Use /address to see your current token balances.`
         const balances = response.data
           .map(
             (token) =>
-              `${token.identifier.split("-")[0]}: ${new BigNumber(token.balance)
+              `${token.identifier}: ${new BigNumber(token.balance)
                 .div(10 ** token.decimals)
                 .toFixed(2)}`
           )
